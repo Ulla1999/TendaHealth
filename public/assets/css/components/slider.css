@@ -1,0 +1,121 @@
+@import url('../fonts.css');
+
+#slider-container {
+    position: relative;
+    max-width: 100%; 
+    margin: 0;
+    left: 0;
+    height: 60vh;
+}
+
+#slider {
+    overflow: hidden;
+    background-color: #444;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+    opacity: 65%;
+
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+#slider-text {
+    position: absolute;
+    display: flex;
+    font-size: 1.5vw !important;
+    color: #fff;
+    text-shadow: 2px 2px 2px #222;
+    width: 60vw;
+    bottom: 10vh;
+    left: 10vw;
+    margin-bottom: 1vh;
+}
+
+.slider-button {
+    position: absolute;
+    background-color: #2bb673;
+    color: white;
+    border: 2px solid #2bb673;
+    padding: 1vh 2vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-color: white;
+    border-radius: 2px;
+    bottom: 4vh;
+    left: 10vw;
+}
+
+.slider-button:hover {
+    background-color: white;
+    color: #666;
+    border: 2px solid #222;
+}
+
+
+@media screen and (max-width: 768px) {
+    #slider-text {
+        bottom: 8vh;
+        position: absolute;
+        width: 80vw;
+        font-size: 1em !important;
+        left: 5vw;
+    }
+
+    #slider figure img {
+        opacity: 20%;
+    }
+
+    .slider-button {
+        padding: 6px 12px;
+        font-size: 14px;
+        bottom: 1vh;
+        left: 5vw;
+    }
+}

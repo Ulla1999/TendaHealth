@@ -1,0 +1,65 @@
+@import url('../fonts.css');
+
+
+.section1 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.section1-background{
+    background-image: url('../../img/home/section1.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 75vh;
+}
+
+.text {
+    position: absolute; /* Add absolute positioning to overlay the text */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6vw;
+}
+
+.textbox{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1vw;
+    opacity: 0.8;
+}
+
+.text h1 {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2bb673; /* Set the text color to contrast with the background */
+}
+
+.text h2{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2bb673;
+}
+
+.text p {
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: white; 
+    padding: 1vw;
+    color: #666;
+}

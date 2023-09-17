@@ -1,0 +1,37 @@
+@import url('../fonts.css');
+
+.section2{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    color: #606060;
+}
+.section2 img{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.section2-item{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #2bb673;
+    border-right: #2bb673 1px solid;
+    border-left: #2bb673 1px solid;
+}
+.section2-item:last-child{
+    border-right: none;
+}
+.section2-item:first-child{
+    border-left: none;
+}

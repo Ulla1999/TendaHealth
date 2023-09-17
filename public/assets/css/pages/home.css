@@ -1,0 +1,12 @@
+@import url('../fonts.css');
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.offset-container {
+    height: 145px;
+    width: 100%;
+}
+

@@ -1,0 +1,8 @@
+@import url('../fonts.css');
+
+/* Adjust offset due to navbar */
+.offset-container {
+    height: 145px;
+    width: 100%;
+}
+
