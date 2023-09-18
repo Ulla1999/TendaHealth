@@ -11,11 +11,23 @@
     padding-bottom: 4vw;
     color: #606060;
 }
+
 .section2 img{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section2:hover .section2-item{
+    transform: translateY(-5px); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.section2:hover .section2-item:not(:hover) {
+    transform: translateY(0);
+    box-shadow: none;
 }
 
 .section2-item{

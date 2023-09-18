@@ -16,6 +16,7 @@
 
 
     <body>
+    @include('cookie-consent::index')
         <div class="offset-container"></div>
         <div class="contact-animation" id="confirmationAnimation"></div>
 
@@ -30,11 +31,14 @@
 
         {{-- Adding Section2 --}}
         @livewire('Section2')
-        
+
         {{-- Adding Section3 --}}
         @livewire('Section3')
 
         {{-- Adding Section4 --}}
         @livewire('Section4')
+
+        {{-- Adding Footer --}}
+        @livewire('Footer')
     </body>
 @endsection

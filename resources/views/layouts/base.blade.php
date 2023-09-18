@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Favicon -->
-		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
 
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-        @livewireStyles
-        @livewireScripts
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-        <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @livewireStyles
+    @livewireScripts
 
-        <!-- Styles -->
-        @stack('styles')
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-    </head>
+    <!-- Styles -->
+    @stack('styles')
 
-    <body>
-        @yield('body')
-    </body>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+
+<body>
+    @include('cookie-consent::index')
+    @yield('body')
+</body>
+
 </html>

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', function () {
             const modalId = button.getAttribute('data-modal');
             const modal = document.getElementById(modalId);
-            modal.style.animation = 'fadeIn 2.5s';
+            modal.style.animation = 'fadeIn 1s';
             modal.style.display = 'flex';
         });
     });
