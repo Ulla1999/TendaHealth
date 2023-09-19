@@ -1,0 +1,43 @@
+.section5-container{
+    background-color: #efefef;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+    padding: 3% 10% 3% 10%;
+}
+
+.section5-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: flex-start;
+}
+.section5-items h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2bb673;
+    margin-bottom: 3%;
+}
+.section5-items h2{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2bb673;
+    margin-bottom: 3%;
+}
+.section5-items p{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 3%;
+}
+.section5-items ul{
+    list-style-type: disc;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #666;
+}
+.section5-items ul li{
+    margin-left: 10px;
+    padding-bottom: 2%;
+}

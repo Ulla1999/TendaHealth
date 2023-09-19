@@ -16,7 +16,8 @@
 
 
     <body>
-    @include('cookie-consent::index')
+        @include('cookie-consent::index')
+        {{-- Adding Navbar --}}
         <div class="offset-container"></div>
         <div class="contact-animation" id="confirmationAnimation"></div>
 

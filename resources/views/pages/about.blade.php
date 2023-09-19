@@ -20,7 +20,10 @@
     </head>
     <body>
         <div class="offset-container"></div>
-        @livewire('Slider')
+        @livewire('Section5')
+        @livewire('GetAdvice')
+        @livewire('LicenceCategories')
+        {{-- @livewire('Footer') --}}
     </body>
     
 @endsection
