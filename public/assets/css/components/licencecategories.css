@@ -1,6 +1,6 @@
 @import url('../fonts.css');
 
-.licence-container{
+.licence-container {
     background-color: #efefef;
     position: relative;
     display: grid;
@@ -9,28 +9,53 @@
     padding: 3% 10% 3% 10%;
 }
 
-.licence-items{
+.licence-container img{
+    object-fit: cover;
+    height: 100%;
+    object-position: 83% center;
+    border-radius: 8px;
+}
+
+.licence-items {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: flex-start;
+    width: 100%;
 }
-.licence-items h1{
+
+.licence-items h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #2bb673;
     margin-bottom: 3%;
 }
-.licence-items h2{
+
+.licence-items h2 {
     font-size: 1.25rem;
     font-weight: 500;
     color: #2bb673;
     margin-bottom: 3%;
 }
-.licence-items li{
-    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-    font-size: 1rem;
+
+.licence-items li {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 1.125em;
     font-weight: 500;
     color: #000;
     margin-bottom: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.licence-items span {
+    margin-left: 3%;
+}
+
+.licence-items-sub {
+    padding-left: 10%;
+    color: #444;
 }

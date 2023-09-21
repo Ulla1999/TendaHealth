@@ -14,7 +14,7 @@
                 </p>
     </div>
     <div class="section5-items">
-        <h1>Our Commitment</h1>
+        <h1>Our commitment</h1>
         <ul>
             <li>Tendahealth specialises in medical scheme and related products and offers a wide selection of basic and
                 comprehensive options suitable for the corporate and individual market.</li>

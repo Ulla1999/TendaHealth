@@ -1,0 +1,37 @@
+@import url('../fonts.css');
+
+.section10{
+    position: relative;
+}
+
+.section10-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.section10-textbox{
+    background-color: #2bb673;  
+}
+.section10-textbox h1{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold !important;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+.section10-textbox li{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0% 10% 0% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 4%;
+}
+.section10-textbox span {
+    margin-left: 3%;
+}

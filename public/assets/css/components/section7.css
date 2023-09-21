@@ -1,0 +1,29 @@
+.section7-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3% 10% 3% 10%;
+    background-color: #fff;
+}
+.section7-container-image img{
+    border-radius: 8px;
+    height:100%;
+    object-fit: cover;
+}
+.section7-text{
+    padding: 2% 5% 2% 10%;
+    background-color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+.section7-text h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2bb673;
+    margin-bottom: 2%;
+}
+.section7-text p{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1%;
+}

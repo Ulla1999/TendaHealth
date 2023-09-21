@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>About Us | Tendahealth</title>
         {{-- StyleSheet --}}
-        <link rel="stylesheet" href="{{ asset('assets/css/pages/about.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/pages/home.css') }}">
         @livewireStyles
         @livewireScripts
 
@@ -23,7 +23,11 @@
         @livewire('Section5')
         @livewire('GetAdvice')
         @livewire('LicenceCategories')
-        {{-- @livewire('Footer') --}}
+        @livewire('OurCredentials')
+        @livewire('Partners')
+        @livewire('Section6')
+        @livewire('Section7')
+        @livewire('Footer')
     </body>
     
 @endsection
