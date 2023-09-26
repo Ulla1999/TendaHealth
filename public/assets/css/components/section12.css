@@ -1,0 +1,28 @@
+@import url('../fonts.css');
+
+.section12{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('../../img/products/section12.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.section12-content{
+    width: 50%;
+    margin-left: 50%;
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.section12-content h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2bb673;
+    margin-bottom: 3%;
+}

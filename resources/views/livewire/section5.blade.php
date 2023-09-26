@@ -16,18 +16,18 @@
     <div class="section5-items">
         <h1>Our commitment</h1>
         <ul>
-            <li>Tendahealth specialises in medical scheme and related products and offers a wide selection of basic and
-                comprehensive options suitable for the corporate and individual market.</li>
-            <li>In keeping with providing complete care and simplifying insurance for clients, Tendahealth also caters
-                for short-term insurance needs.</li>
-            <li>Highly skilled consultants provide sound and objective advice and guidance enabling informed customer
-                choices whether it be in person, online or through Tendahealth’s skilled call centre consultants.</li>
-            <li>At Tendahealth we believe in lasting partnerships and real value – our insurance and medical scheme
+            <li><i class="fa-solid fa-circle-check fa-xs " style="color: #2bb673;"></i><span>Tendahealth specialises in medical scheme and related products and offers a wide selection of basic and
+                comprehensive options suitable for the corporate and individual market.</span></li>
+            <li><i class="fa-solid fa-circle-check fa-xs " style="color: #2bb673;"></i><span>In keeping with providing complete care and simplifying insurance for clients, Tendahealth also caters
+                for short-term insurance needs.</span></li>
+            <li><i class="fa-solid fa-circle-check fa-xs " style="color: #2bb673;"></i><span>Highly skilled consultants provide sound and objective advice and guidance enabling informed customer
+                choices whether it be in person, online or through Tendahealth’s skilled call centre consultants.</span></li>
+            <li><i class="fa-solid fa-circle-check fa-xs " style="color: #2bb673;"></i><span>At Tendahealth we believe in lasting partnerships and real value – our insurance and medical scheme
                 partners are kept informed of our clients’ feedback about their products and reap the benefits of
-                measurable outcomes.</li>
-            <li>We commit ourselves to understanding the industry, keeping abreast of change and continuously gaining
+                measurable outcomes.</span></li>
+            <li><i class="fa-solid fa-circle-check fa-xs " style="color: #2bb673;"></i><span>We commit ourselves to understanding the industry, keeping abreast of change and continuously gaining
                 new insight about legislation, products and services involving the insurance and medical schemes
-                industry and sharing our knowledge with our clients and partners.</li>
+                industry and sharing our knowledge with our clients and partners.</span></li>
         </ul>
     </div>
 </div>
