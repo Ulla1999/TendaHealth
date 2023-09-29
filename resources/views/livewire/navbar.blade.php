@@ -50,14 +50,14 @@
                         </li>
                         <li class="dropdown-column">
                             <a href="{{ route('medical-scheme-cover') }}"
-                                class="{{ request()->routeIs('medical-scheme-cover') ? 'active' : '' }}">Medical scheme
+                                class="{{ request()->routeIs('medical-scheme-cover') || request()->routeIs('bonitas')? 'active' : '' }}">Medical scheme
                                 cover</a>
                             <a href="{{ route('bonitas') }}"
                                 class="{{ request()->routeIs('bonitas') ? 'active' : '' }}">- Bonitas</a>
                         </li>
                         <li class="dropdown-column">
                             <a href="{{ route('gap-cover') }}"
-                                class="{{ request()->routeIs('gap-cover') ? 'active' : '' }}">GAP cover</a>
+                                class="{{ request()->routeIs('gap-cover') || request()->routeIs('medgap') || request()->routeIs('essentialmed') || request()->routeIs('sanlam')? 'active' : '' }}">GAP cover</a>
                             <a href="{{ route('medgap') }}"
                                 class="{{ request()->routeIs('medgap') ? 'active' : '' }}">- Medgap</a>
                             <a href="{{ route('essentialmed') }}"

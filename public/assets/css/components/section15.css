@@ -1,0 +1,121 @@
+@import url('../fonts.css');
+
+.section15{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url('../../img/products/section15.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.section15-container{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    max-width: 40%;
+    color: #444;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section15-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: flex-end;
+    max-width: 80%;
+}
+.section15-items h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2bb673;
+    margin-bottom: 3%;
+}
+.section15-items h2{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2bb673;
+    margin-bottom: 3%;
+}
+.section15-items h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2bb673;
+    margin-bottom: 2%;
+}
+.section15-items p{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 3%;
+}
+.section15-grid{
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2%;
+}
+.section15-grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section15-icon{
+    position: absolute;
+    display: inline-block;
+    padding: 0.5em; 
+    border-radius: 50%;
+    cursor: pointer;
+    right: 2%;
+}
+.section15-item-message{
+    position: absolute;
+    bottom: 110%; /* Position the tooltip above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5em 1em; /* Adjust padding as needed */
+    background-color: rgba(43, 182, 115, 1);
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+}
+.section15-item-message h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.section15-item-message p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.section15-item-message::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(43, 182, 115, 1) transparent transparent transparent;
+}
+
+.section15-icon:hover .section15-item-message{
+    opacity: 1;
+}
+
+.section15-grid-item-container{
+    position: relative;
+    display: flex;
+}
