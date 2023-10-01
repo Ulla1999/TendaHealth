@@ -1,0 +1,27 @@
+@import url('../fonts.css');
+
+.section20{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url('../../img/products/section20-01.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.section20-container{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    max-width: 40%;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.section20-container h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2%;
+}

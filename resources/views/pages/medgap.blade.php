@@ -15,5 +15,11 @@
 </head>
 <body>
     <div class="offset-container"></div>
+    @livewire('Section16')
+    @livewire('Section17')
+    @livewire('Section18')
+    @livewire('Section19')
+    @livewire('Partners')
+    @livewire('Footer')
 </body>
 @endsection

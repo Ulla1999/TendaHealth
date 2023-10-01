@@ -43,8 +43,11 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
 }
-.section5-items span {
+.section5-items ul li span {
     margin-left: 3%;
+    align-self: flex-start;
+}
+.section5-items ul li i{
+    margin-top: 1.125vh;
 }

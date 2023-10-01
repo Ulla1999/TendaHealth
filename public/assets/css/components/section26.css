@@ -1,0 +1,28 @@
+@import url('../fonts.css');
+
+.section26{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../../img/products/section26.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.section26-container{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    max-width: 40%;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.section26-container h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2%;
+    padding-left: 2%;
+}

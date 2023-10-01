@@ -1,0 +1,69 @@
+@import url('../fonts.css');
+
+.section27{
+    position: relative;
+}
+.section27 img{
+    border-radius: 8px;
+}
+.section27-container{
+    margin: 2% 10% 2% 10%;
+    max-width: 80%;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.section27-container h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1574c8;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section27-container button{
+    width: 100%;
+    background-color: #1574c8;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    margin-top: 2%;
+    padding: 1vw;
+}
+.section27-container button::before {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.section27-container button:hover::before {
+    opacity: 1;
+}
+.section27-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+.section27-grid-item{
+    border-radius: 8px;
+    padding: 2%;
+}
+.section27-grid-item h2{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5b5b5b;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}

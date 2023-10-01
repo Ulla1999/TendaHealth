@@ -1,0 +1,62 @@
+@import url('../fonts.css');
+
+.section17{
+    position: relative;
+}
+.section17 img{
+    border-radius: 8px;
+    height: 100%;
+}
+
+.section17-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    margin: 2% 10% 5% 10%;
+}
+
+.section17 h1{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold !important;
+    color: #ed0007;
+    font-size: 2.5rem;
+    padding: 1vw;
+}
+
+.section17-text li{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    color: #444;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.section17-text span {
+    margin-left: 3%;
+}
+.section17-container button{
+    width: 100%;
+    background-color: #ed0007;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    margin-top: 2%;
+    padding: 1vw;
+}.section17-container button::before {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.section17-container button:hover::before {
+    opacity: 1;
+}
