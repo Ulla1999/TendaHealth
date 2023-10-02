@@ -1,0 +1,20 @@
+@import url('../fonts.css');
+
+.section29{
+    position: relative;
+}
+.section29-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5% 10% 5% 10%;
+}
+.section29-container h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2bb673;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

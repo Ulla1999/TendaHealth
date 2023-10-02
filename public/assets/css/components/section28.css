@@ -1,0 +1,73 @@
+@import url('../fonts.css');
+
+.section28{
+    position: relative;
+    height: 55vh;
+}
+.section28-photo{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url('../../img/products/section28.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section28-photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(126, 126, 126, 0.6);
+    pointer-events: none;
+}
+.section28-container{
+    position: absolute;
+    width: 80%;
+    margin: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section28-container h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.section28-container p{
+    font-size: 1.25rem;
+    width: 60%;
+    color: #fff;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.section28-brokers{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+.section28-brokers h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2bb673;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.section28-brokers img{
+    margin-top: 3%;
+    width: 60%;
+    display: flex;
+}

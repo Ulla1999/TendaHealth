@@ -3,6 +3,5 @@
 @endpush
 <div class="section18">
     <div class="section18-container">
-        <h1>Get the gap cover you deserve</h1>
     </div>
 </div>

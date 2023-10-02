@@ -15,7 +15,9 @@
 </head>
 <body>
     <div class="offset-container"></div>
+    @livewire('Section28')
     @livewire('GetAdvice')
+    @livewire('Section29')
     @livewire('Footer')
 </body>
 @endsection

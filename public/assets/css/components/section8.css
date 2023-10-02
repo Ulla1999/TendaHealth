@@ -1,7 +1,7 @@
 .section8{
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-image: url('../../img/services/section8.jpg');
     background-size: cover;
     background-position: center center;
@@ -35,12 +35,14 @@
     margin-right: 3%;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     justify-content: flex-start;
+    line-height: 2;
 }
 .section8-text ul li span {
     margin-left: 3%;
     align-self: flex-start;
 }
 .section8-text ul li i{
-    margin-top: 0.6vh;
+    line-height: 2;
 }

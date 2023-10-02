@@ -5,24 +5,34 @@
 }
 .section17 img{
     border-radius: 8px;
-    height: 100%;
 }
-
 .section17-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10%;
-    margin: 2% 10% 5% 10%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3%;
+    margin: 2% 10% 2% 10%;
 }
-
+.section17-container :nth-child(3){
+    grid-column: 1 / 3;
+}
+.section17-text-sub{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-top: #ed0007 1px solid;
+    padding-top: 5%;
+}
+.section17-text-sub :nth-child(3){
+    grid-column: 1;
+}
 .section17 h1{
     font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
     font-weight: bold !important;
     color: #ed0007;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     padding: 1vw;
 }
-
 .section17-text li{
     font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
     font-size: 0.75em;
@@ -32,21 +42,22 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
     padding-bottom: 2%;
 }
 .section17-text span {
     margin-left: 3%;
 }
-.section17-container button{
-    width: 100%;
+.section17 button{
+    width: 80%;
     background-color: #ed0007;
     color: #fff;
     font-size: 1.25rem;
     border-radius: 8px;
-    margin-top: 2%;
+    margin: 2% 10% 5% 10%;
     padding: 1vw;
-}.section17-container button::before {
+}
+.section17 button::before {
     content: "\f078";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -57,6 +68,6 @@
     transition: opacity 0.3s ease;
 }
 
-.section17-container button:hover::before {
+.section17 button:hover::before {
     opacity: 1;
 }

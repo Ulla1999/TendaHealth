@@ -18,6 +18,7 @@
     padding: 10px;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 20px;
 }
 
 .section2:hover .section2-item{
