@@ -1,0 +1,152 @@
+@import url('../fonts.css');
+
+/* Styles for the modal */
+.section31-modal {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+.section31-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.section31-form-container :nth-child(6){
+    grid-column: 1 / 3;
+}
+@media screen and (max-width: 768px) {
+    .section31-form-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+.section31-advice-submit {
+    background-color: #2bb673;
+    color: white;
+    border: 2px solid #2bb673;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-color: white;
+    border-radius: 8px;
+}
+
+/* Styles for the modal content */
+.section31-modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for popup */
+.section31-popup-main-text {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 1em;
+
+}
+
+.section31-popup-sub-text {
+    font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 600;
+    padding-bottom: 1vh;
+}
+
+.section31-input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section31-input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.section31-input-label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+    /* Adjust this value to your preference */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.section31-input-field:focus+.section31-input-label,
+.section31-input-field:valid+.section31-input-label {
+    top: 0;
+    font-size: 12px;
+    /* Adjust font size when moved to the top */
+    color: #666;
+    /* Adjust color when moved to the top */
+}
+
+.section31-input-container .section31-input-field:focus {
+    border: 2px solid #2bb673;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) #2bb673;
+}
+
+/* Style the container for the custom checkbox */
+.section31-check-container {
+    position: relative;
+    padding-left: 30px; /* Adjust as needed */
+    margin-bottom: 15px;
+}
+
+/* Style the checkbox itself */
+.section31-check-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0; /* Hide the default checkbox */
+    cursor: pointer;
+}
+
+/* Style the custom checkbox design */
+.section31-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px; /* Adjust as needed */
+    width: 25px; /* Adjust as needed */
+    background-color: #fff; /* Background color of the checkbox */
+    border: 1px solid #ccc; /* Border around the checkbox */
+    border-radius: 4px;
+}
+
+/* Style the checkmark icon (hidden by default) */
+.section31-checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px; /* Adjust as needed */
+    top: 5px; /* Adjust as needed */
+    width: 6px; /* Adjust as needed */
+    height: 12px; /* Adjust as needed */
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Style the checkmark when the checkbox is checked */
+.section31-check-container input[type="checkbox"]:checked + .section31-checkmark::after {
+    display: block;
+}

@@ -348,104 +348,21 @@ nav ul li a:active::before {
 }
 /* Style the dropdown content */
 .dropdown-menu {
-    display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1vw;
     position: absolute;
     background-color: #fff;
-    width: 70vw;
+    width: 80vw;
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     top: 4.25em;
     right: -107px;
     padding: 1em;
     border-top: #2bb673 solid 3px;
-    max-width: 70vw;
+    max-width: 80vw;
 }
-@media screen and (max-width: 979px) and (min-width: 767px) {
-    .dropdown-menu {
-        right: -81px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .dropdown-menu {
-        right: -81px;
-    }
-}
-
-/* Style the list items within the columns */
-.dropdown-column a {
-    display: flex;
-    padding: 10px;
-    text-decoration: none;
-    color: #666;
-    font-weight: bold;
-    font-size: 12px;
-    position: relative; /* Add this to make the underline work */
-}
-
-/* Style the active link within the columns */
-.dropdown-column a.active {
-    color: #2bb673;
-}
-
-/* Add a permanent underline for the active link */
-.dropdown-column a.active::before,
-.dropdown-column a.active::before {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 2px; /* Height of the underline */
-    background-color: #2bb673; /* Color of the underline */
-}
-
-/* Create a multi-column layout */
-.dropdown-column {
-    float: left;
-    list-style: none;
-    flex-basis: 25%;
-    padding: 0.3125em;
-    margin-top: -35px;
-}
-
-/* Underline the word when hovered */
-.dropdown-column a::before{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background-color: #2bb673;
-    bottom: 0px;
-    transition: width 1s ease;
-    left: 0;
-}
-
-.dropdown-column a.active::before,
-.dropdown-column a.active::after,
-ul .dropdown-column a:active::before {
-    width: 100%; 
-    bottom: 0px;
-    height: 3px;
-}
-
-.dropdown-column a::before {
-    right: 100%;
-}
-
-.dropdown-column a:hover::before {
-    width: 100%;
-    right: 0;
-}
-
-/* Underlines on hover */
-.dropdown-column a:hover::before {
-    width: 100%;
-    left: 0;
-}
-
-
 /* Clear floats to ensure proper layout */
 .dropdown::after {
     content: "";
@@ -455,49 +372,71 @@ ul .dropdown-column a:active::before {
 
 /* Show the dropdown on hover */
 .dropdown:hover .dropdown-menu {
-    display: flex;
-    
+    display: grid;
     transition: width 1s ease;
 }
 
 .desktop-nav{
     display: flex;
 }
-
-.mobile-nav {
-    display: none;
+.dropdown-item{
+    color: #fff;
+    height: 10vw;
+    border-radius: 10vw;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: end;
 }
-
-@media screen and (max-width: 769px) {
-    .desktop-nav{
-        display: none;
-    }
-
-    .mobile-nav{
-        width : 80vw;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        padding-left: 10vw;
-    }
-
-    .mobile-nav ul{
-        align-content: flex-start;
-        align-items: flex-start;
-        font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .mobile-nav li{
-        display: inline;
-        margin : 1vw 1vw 1vw 6.25vw;
-    }
+.dropdown-item-iconbox{
+    display: absolute;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 8vw;
+    border: solid 8px #fff;
+    margin-right: 1.5vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px;
 }
-
-
-
-/* *********************************************************************************************************************************** */
-/* ************************************************    HOME               ************************************************************ */
-/* *********************************************************************************************************************************** */
+.dropdown-item-iconbox img{
+    width: 4.5vw;
+    height: 4.5vw;
+    align-self: center;
+    margin-right: 0.85vw;
+}
+.dropdown-item-text-icon{
+    height: 2em;
+    width: 2em;
+    margin-left: 1em;
+}
+.dropdown-item-text{
+    margin-left: 1em;
+}
+.dropdown-item:hover{
+    background-color: #a49685 !important;
+    color: #000 !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    padding-top: 1vw !important;
+}
+.dropdown-item:hover .dropdown-item-text{
+    display: flex !important;
+    justify-content: end !important;
+}
+.dropdown-item:hover .dropdown-item-iconbox{
+    width: 8vw !important;
+    height: 8vw !important;
+    border-radius: 8vw !important;
+    background-color: #fff !important;
+    margin-right: 1.5vw !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    filter: invert(100%);
+    padding: 3px;
+}
