@@ -50,7 +50,9 @@
                     </a>
                     <ul class="dropdown-menu">
                         <button class="dropdown-item" style="background-color: #4d9947">
-                            <div class="dropdown-item-text">MEDICAL SCHEME COVER</div>
+                            <div class="dropdown-item-text">
+                                MEDICAL SCHEME COVER
+                            </div>
                             <div class="dropdown-item-iconbox">
                                 <img src="{{ asset('assets/img/navbar/medicalschemecover.png') }}">
                             </div>
@@ -61,7 +63,12 @@
                                 <img src="{{ asset('assets/img/navbar/primaryhealth.png') }}"></div>
                         </button>
                         <button class="dropdown-item" style="background-color: #ec1d25">
-                            <div class="dropdown-item-text">LIFE INSURANCE</div>
+                            <div class="dropdown-item-text">
+                                LIFE INSURANCE
+                                <div>
+                                    <img class="dropdown-item-logo" src="{{ asset('assets/img/navbar/sanlam_indie_logo.png') }}">
+                                </div>
+                            </div>
                             <div class="dropdown-item-iconbox">
                                 <img src="{{ asset('assets/img/navbar/lifeinsurance.png') }}"></div>
                         </button>

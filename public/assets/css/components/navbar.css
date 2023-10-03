@@ -428,6 +428,9 @@ nav ul li a:active::before {
 .dropdown-item:hover .dropdown-item-text{
     display: flex !important;
     justify-content: end !important;
+    flex-direction: column;
+    height: 8vw;
+    width: 12vw;
 }
 .dropdown-item:hover .dropdown-item-iconbox{
     width: 8vw !important;
@@ -439,4 +442,10 @@ nav ul li a:active::before {
     justify-content: flex-end !important;
     filter: invert(100%);
     padding: 3px;
+}
+.dropdown-item-logo{
+    display: none;
+}
+.dropdown-item:hover .dropdown-item-logo{
+    display: flex;
 }
