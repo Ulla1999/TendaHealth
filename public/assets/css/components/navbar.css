@@ -348,7 +348,7 @@ nav ul li a:active::before {
 }
 /* Style the dropdown content */
 .dropdown-menu {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 1vw;
@@ -412,6 +412,9 @@ nav ul li a:active::before {
     width: 2em;
     margin-left: 1em;
 }
+nav .dropdown-item-text a:before{
+    background-color: transparent !important;
+}
 .dropdown-item-text{
     margin-left: 1em;
 }
@@ -424,6 +427,7 @@ nav ul li a:active::before {
     justify-content: flex-end !important;
     align-items: flex-start !important;
     padding-top: 1vw !important;
+    transition: 1s;
 }
 .dropdown-item:hover .dropdown-item-text{
     display: flex !important;

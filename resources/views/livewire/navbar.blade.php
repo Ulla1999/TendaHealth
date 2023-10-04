@@ -52,46 +52,71 @@
                         <button class="dropdown-item" style="background-color: #4d9947">
                             <div class="dropdown-item-text">
                                 MEDICAL SCHEME COVER
+                                <a href="{{ route('bonitas') }}">
+                                    <img style="height: 2.5vw; margin-bottom: 2vw; margin-left: 3vw; padding: 2px;" class="dropdown-item-logo"
+                                        src="{{ asset('assets/img/navbar/bonitas_logo.png') }}">
+                                </a>
                             </div>
                             <div class="dropdown-item-iconbox">
                                 <img src="{{ asset('assets/img/navbar/medicalschemecover.png') }}">
                             </div>
                         </button>
                         <button class="dropdown-item" style="background-color: #ffbb00">
-                            <div class="dropdown-item-text">PRIMARY HEALTH</div>
+                            <div class="dropdown-item-text">PRIMARY HEALTH
+                                <a href="{{ route('bonitas') }}">
+                                    <img style="height: 2.5vw; margin-bottom: 2vw; margin-left: -1vw; padding: 2px;" class="dropdown-item-logo"
+                                        src="{{ asset('assets/img/navbar/essentialmed_logo.png') }}">
+                                </a></div>
                             <div class="dropdown-item-iconbox">
-                                <img src="{{ asset('assets/img/navbar/primaryhealth.png') }}"></div>
+                                <img src="{{ asset('assets/img/navbar/primaryhealth.png') }}">
+                            </div>
                         </button>
                         <button class="dropdown-item" style="background-color: #ec1d25">
                             <div class="dropdown-item-text">
                                 LIFE INSURANCE
-                                <a href="{{route('sanlam')}}">
-                                    <img  class="dropdown-item-logo" src="{{ asset('assets/img/navbar/sanlam_indie_logo.png') }}">
+                                <a href="{{ route('sanlam') }}">
+                                    <img style="margin-bottom: 2.5vw; margin-left: -1vw; margin-right: 10px;" class="dropdown-item-logo"
+                                        src="{{ asset('assets/img/navbar/sanlam_indie_logo.png') }}">
                                 </a>
                             </div>
                             <div class="dropdown-item-iconbox">
-                                <img src="{{ asset('assets/img/navbar/lifeinsurance.png') }}"></div>
+                                <img src="{{ asset('assets/img/navbar/lifeinsurance.png') }}">
+                            </div>
                         </button>
                         <button class="dropdown-item" style="background-color: #2ab474">
                             <div class="dropdown-item-text">INVESMENTS</div>
                             <div class="dropdown-item-iconbox">
-                                <img src="{{ asset('assets/img/navbar/investments.png') }}"></div>
+                                <img src="{{ asset('assets/img/navbar/investments.png') }}">
+                            </div>
                         </button>
                         <button class="dropdown-item" style="background-color: #6a3341">
-                            <div class="dropdown-item-text">SHORT TERM INSURANCE</div>
+                            <div class="dropdown-item-text">SHORT TERM INSURANCE
+                                <a href="{{ route('sanlam') }}">
+                                    <img style="height:auto;width:7vw;margin-left:3vw" class="dropdown-item-logo"
+                                        src="{{ asset('assets/img/navbar/miway_logo.png') }}">
+                                </a>
+                                <a href="{{ route('sanlam') }}">
+                                    <img style="height:auto;width:7vw;padding:2px;margin-left:3vw" class="dropdown-item-logo"
+                                        src="{{ asset('assets/img/navbar/santam_logo.png') }}">
+                                </a></div>
                             <div class="dropdown-item-iconbox">
-                                <img src="{{ asset('assets/img/navbar/shortterminsurance.png') }}"></div>
+                                <img src="{{ asset('assets/img/navbar/shortterminsurance.png') }}">
+                            </div>
                         </button>
                         <button class="dropdown-item" style="background-color: #ec145a">
                             <div class="dropdown-item-text">GAP COVER
-                                <a href="{{route('sanlam')}}">
-                                    <img  class="dropdown-item-logo" src="{{ asset('assets/img/navbar/medgap_logo.png') }}">
+                                <a href="{{ route('medgap') }}">
+                                    <img style="height:auto;width:7vw;margin-left:3vw" class="dropdown-item-logo"
+                                        src="{{ asset('assets/img/navbar/medgap_logo.png') }}">
                                 </a>
-                                <a href="{{route('sanlam')}}">
-                                    <img  class="dropdown-item-logo" src="{{ asset('assets/img/navbar/sanlam_gap_logo.png') }}">
-                                </a></div>
+                                <a href="{{ route('sanlam') }}">
+                                    <img style="height:auto;width:7vw;padding:2px;margin-left:3vw" class="dropdown-item-logo"
+                                        src="{{ asset('assets/img/navbar/sanlam_gap_logo.png') }}">
+                                </a>
+                            </div>
                             <div class="dropdown-item-iconbox">
-                                <img src="{{ asset('assets/img/navbar/gapcover.png') }}"></div>
+                                <img src="{{ asset('assets/img/navbar/gapcover.png') }}">
+                            </div>
                         </button>
                     </ul>
                 </li>
