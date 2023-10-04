@@ -65,9 +65,9 @@
                         <button class="dropdown-item" style="background-color: #ec1d25">
                             <div class="dropdown-item-text">
                                 LIFE INSURANCE
-                                <div>
-                                    <img class="dropdown-item-logo" src="{{ asset('assets/img/navbar/sanlam_indie_logo.png') }}">
-                                </div>
+                                <a href="{{route('sanlam')}}">
+                                    <img  class="dropdown-item-logo" src="{{ asset('assets/img/navbar/sanlam_indie_logo.png') }}">
+                                </a>
                             </div>
                             <div class="dropdown-item-iconbox">
                                 <img src="{{ asset('assets/img/navbar/lifeinsurance.png') }}"></div>
@@ -83,7 +83,13 @@
                                 <img src="{{ asset('assets/img/navbar/shortterminsurance.png') }}"></div>
                         </button>
                         <button class="dropdown-item" style="background-color: #ec145a">
-                            <div class="dropdown-item-text">GAP COVER</div>
+                            <div class="dropdown-item-text">GAP COVER
+                                <a href="{{route('sanlam')}}">
+                                    <img  class="dropdown-item-logo" src="{{ asset('assets/img/navbar/medgap_logo.png') }}">
+                                </a>
+                                <a href="{{route('sanlam')}}">
+                                    <img  class="dropdown-item-logo" src="{{ asset('assets/img/navbar/sanlam_gap_logo.png') }}">
+                                </a></div>
                             <div class="dropdown-item-iconbox">
                                 <img src="{{ asset('assets/img/navbar/gapcover.png') }}"></div>
                         </button>

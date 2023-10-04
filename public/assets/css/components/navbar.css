@@ -427,7 +427,7 @@ nav ul li a:active::before {
 }
 .dropdown-item:hover .dropdown-item-text{
     display: flex !important;
-    justify-content: end !important;
+    justify-content: space-between;
     flex-direction: column;
     height: 8vw;
     width: 12vw;
@@ -445,7 +445,15 @@ nav ul li a:active::before {
 }
 .dropdown-item-logo{
     display: none;
+    width: auto;
 }
 .dropdown-item:hover .dropdown-item-logo{
     display: flex;
 }
+.dropdown-item:hover .dropdown-item-logo:hover{
+    display: flex;
+    box-shadow: 10px 10px 10px #888888;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
